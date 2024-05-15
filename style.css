@@ -477,8 +477,8 @@ margin-top: 25px;
     }
     
     .items_section {
-      flex-direction: column; /* Change flex direction for smaller screens */
-      align-items: center; /* Align items to center for smaller screens */
+      flex-direction: column;
+      align-items: center; 
     }
     
     .horizontal-bar {
