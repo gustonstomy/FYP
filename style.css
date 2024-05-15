@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan' sans-serif;
+    
    
 }
 :root{
@@ -226,6 +227,7 @@ margin-top: 25px;
     background-color: var(--bg-color);
     height: 350px;
     border-radius: 8px;
+    overflow: scroll;
     
     
 }
@@ -380,7 +382,7 @@ margin-top: 25px;
 #product1 .pro{
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px;
+    padding: 25px 20px;
     border: 1px solid var(--main-color);
     border-radius: 25px;
     cursor: pointer;
