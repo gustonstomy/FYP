@@ -1,6 +1,5 @@
 /* Default styles */
 
-/* Add this at the end of your existing CSS file */
 @media only screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     .slider-container {
