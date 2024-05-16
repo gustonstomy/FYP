@@ -1,6 +1,3 @@
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -24,8 +21,6 @@ body {
     font-family: 'Spartan' sans-serif;
     background-color: var(--body-color);
 }
-
-
 
 h1{
     font-size: 50px;
@@ -61,14 +56,22 @@ p{
     padding: 40px 50px;
 }
 
+.firstCname{
+  text-align: center;
+  font-size: 30;
+  padding: 0.3rem 0.3rem;
+  font-weight: bold;
+  background: var(--body-color);
+  
+}
 
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     background: var(--bg-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0.2, 0.2);
 }
 
 #header input{
@@ -77,17 +80,14 @@ p{
     font-size: 14px;
     width: 85%;
     border: 2px solid;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     outline: var(--blacks);
     background-color: var(--bg-color);
-    padding: 9px 4px 9px 40px;
+    padding: 0.56rem 0.25rem 0.56rem 2.5rem;
     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat left;
     background-position: 5px center;
     margin-right: 10px;
 }
-
-
-   
 
 #header .Search_form{
     display: flex;
@@ -99,38 +99,21 @@ p{
     
 }
 
-
 button.normal {
     font-size: 14px;
     font-weight: 600;
-    padding: 15px 30px;
-    width: 110px;
-    height: 35px;
+    width: 6.875rem;
+    height: 2.19rem;
+    padding: .3125rem .3125rems;
     color: var(--bg-color);
     background-color: var(--blacks);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
     border: none;
     outline: none;
     transition: 0.2s;
-}
-
-#header button{
-    
-    padding: 5px 5px;
-}
-
-
-.firstCname{
     text-align: center;
-    font-size: 30;
-    padding: 5px 5px;
-    font-weight: bold;
-    background: var(--body-color);
-    
 }
-
-
 
 #navbar{
      display: flex;
@@ -142,19 +125,18 @@ button.normal {
 
 #navbar li{
     list-style: none;
-    padding: 0 30px;
+    padding: 0 1.875rem;
 }
 #navbar li a i {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     
 }
 
 #navbar li a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.563rem;
     color: var(--blacks);
 }
-
 
 #navbar li a:hover{
     color: var(--main-color);
@@ -203,54 +185,50 @@ margin-top: 25px;
     margin-bottom: 8px;
 
 }
-
+/*=========================================================================================================================*/
 
 .Cname{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bolder;
     padding-left: 5%;
     
 }
 
-
 .container1 {
     padding-left: 0;
-    width: 220px;
+    width: 13.73rem;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 12.5rem;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     background-color: var(--bg-color);
-    height: 350px;
-    border-radius: 8px;
-    overflow: hidden;
-    
-    
+    height:  21.875rem;
+    border-radius: 0.5rem;
+    overflow: hidden;  
 }
 
 
 #menu_items_list1 {
     list-style: none;
-    padding: 20px;
+    padding: 1.25rem;
 
 }
 #menu_items_list1 li{
     /* list-style: none; */
-    padding: 10px 0;
+    padding: 0.625rem 0;
 
 }
 #menu_items_list1 li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: black;
     transition: color 0.3s ease;
 }
 
 #menu_items_list1 li a:hover{
-    /* text-decoration: underline; */
     color: var(--main-color);
 }
 
@@ -259,19 +237,16 @@ margin-top: 25px;
 }
 
 .slider-container {
-    width: 700px;
-    max-width: 800px;
-  
+    width: 43.75rem;
+    max-width: 50rem;
     overflow: hidden;
-    position: relative;
-    height: 350px;
-    margin-left: 10px;
-    margin-top: 30px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: 1px solid var(--main-color);
-    border-radius: 25px;
+    height: 21.875rem;
+
+
+    margin-left: 0.625rem;
+    margin-top: 1.875rem;
+    border:  0.063rem solid var(--main-color);
+    border-radius: 1.563rem;
 }
 
 .slider {
@@ -288,50 +263,49 @@ margin-top: 25px;
 
 
 .img-fr1{
-    width: 300px;
-    height: 170px;
+    width: 18.75rem;
+    height: 10.625rem;
     background-image: url(imgs/ll.jpg);
     background-size: 100%;
-    border-radius: 10px;
-    /* background-repeat: no-repeat; */
+    border-radius: 0.625rem;
 }
 .img-fr2{
-    width: 300px;
-    height: 180px;
+    width: 18.75rem;
+    height: 10.625rem;
     background-image: url(imgs/La-harvest.jpg);
     background-size: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-repeat: no-repeat;
 
 }
 
 .container3 {
     padding-left: 0;
-    width: 300px;
+    width: 18.75rem;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     background-color: var(--bg-color);
-    height: 170px;
-    border-radius: 8px;
+    height: 10.625rem;
+    border-radius: 0.5rem;
     
     
 }
 .container4 {
     padding-left: 0;
-    width: 300px;
+    width: 18.75rem;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     background-color: var(--bg-color);
-    height: 170px;
-    border-radius: 8px;
+    height: 10.625rem;
+    border-radius: 0.5rem;
     
     
 }
@@ -344,7 +318,7 @@ margin-top: 25px;
     align-items: center;
     background-color: var(--main-color);
     color: var(--bg-color);
-    padding: 10px 10px; /* Adjust padding as needed */
+    padding: 0.625rem 0.625rem; 
     margin-top: 5rem;
     margin-left: 4rem;
     width: 89rem;
@@ -353,14 +327,13 @@ margin-top: 25px;
 
 .left-link, .right-link {
     padding: 0 1.5rem;
-    font-size: 18px; /* Adjust font size as needed */
+    font-size: 18px; 
     font-weight: bold;
     text-decoration: none;
     color: var(--bg-color);
 }
 
 .left-link:hover, .right-link:hover{
-    /* text-decoration: underline; */
     color: var(--blacks);
 } 
 
@@ -374,25 +347,26 @@ margin-top: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 #product1 .pro{
     width: 23%;
-    min-width: 250px;
-    padding: 25px 20px;
-    border: 1px solid var(--main-color);
-    border-radius: 25px;
+    min-width: 15.625rem;
+    padding: 1.563rem 1.25rem;
+    border:  0.063rem solid var(--main-color);
+    border-radius: 1.563rem;
     cursor: pointer;
-    margin: 15px 0;
+    margin: 0.938rem 0;
     transition: 0.2s ease;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 1.25rem 1.25rem 1.875rem rgba(0, 0, 0, 0.02);
     position: relative;
 }
 #product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(97, 47, 255, 0.3);
-    padding: 10px;
-    border: 1px solid var(--main-color);
+    box-shadow: 1.25rem 1.25rem 1.25rem rgba(97, 47, 255, 0.3);
+    padding: 0.625rem
+    ;
+    border: 0.063rem solid var(--main-color);
     transition: .4s;
 }
 #product1 .pro .img-1{
@@ -403,51 +377,51 @@ margin-top: 25px;
 #product1 .pro img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     object-fit: cover;
 }
 
 #product1 .pro .des{
     text-align: start;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 
 #product1 .pro .des span{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 
 #product1 .pro .des h5{
-    padding-top: 7px;
-    font-size: 18px;
+    padding-top: 0.4375rem;
+    font-size: 1.125rem;
     color: #1a1a1a;
 }
 
 #product1 .pro .des h4{
-    padding-top: 7px;
-    font-size: 18px;
+    padding-top: 0.4375rem;
+    font-size: 1.125rem;
     color: #088178;
 }
 
 #product1 .pro .des i{
-    padding-top: 7px;
-    font-size: 12px;
+    padding-top: 0.4375rem;
+    font-size: 0.75rem;
     color: var(--stars-color);
 }
 
 #product1 .pro .cart2{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 3.125rem;
     background-color: #e8f6ea;
     color: #088178;
-    border: 1px solid #cce7d0;
+    border:  0.063rem solid #cce7d0;
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: 1.25rem;
+    right: 0.625rem;
 }
 
 #product1 .pro .cart2:hover{
@@ -458,63 +432,45 @@ margin-top: 25px;
 
 /* Default styles */
 
-@media only screen and (max-width: 768px) {
-   
-    .slider-container {
-      width: 100%; 
-      margin: 0;
-      border-radius: 0; 
-    }
-    
-    .container1 {
-      width: 100%; 
-      margin-left: 0;
-      border-radius: 0;
-    }
-    
-    .items_section {
-      flex-direction: column; 
-      align-items: center; 
-    }
-    
-    .horizontal-bar {
-      width: 100%; 
-      margin-left: 0;
-    }
-    
-    #product1 .pro {
-      width: 48%; 
-      min-width: auto; 
-      margin: 15px 0; 
-    }
-  }
-@media only screen and (max-width: 480px) {
-   
-    .slider-container {
-      width: 100%; 
-      margin: 0;
-      border-radius: 0;
-    }
-    
-    .container1 {
-      width: 100%; 
-      margin-left: 0;
-      border-radius: 0;
-    }
-    
-    .items_section {
-      flex-direction: column; 
-      align-items: center; 
-    }
-    
-    .horizontal-bar {
-      width: 100%; 
-      margin-left: 0;
-    }
-    
-    #product1 .pro {
-      width: 48%; 
-      min-width: auto; 
-      margin: 15px 0; 
-    }
+@media (max-width: 799px) {
+  .firstCname{
+    width: 80.35rem;
+    font-size: 16px;
+    background: var(--main-color);  
+ }
+
+ #header{
+  width: 80.35rem;
+  padding: 10px 10px;
+  margin-right: 0;
+}
+
+.Cname{
+  font-size: 30px;
+  font-weight: bolder;
+  padding-left: 5%; 
+}
+
+
+.container1 {
+  padding-left: 0;
+  width: 70rem;
+  margin-left: 5rem;
+  margin-top: 30px; 
+}
+
+.slider-container {
+  width: 43.75rem;
+  /* max-width: 800px; */
+  overflow: hidden;
+  /* position: relative; */
+  height: 21.8rem;
+  margin-left: 10px;
+  margin-top: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid var(--stars-color);
+  border-radius: 25px;
+}
   }
