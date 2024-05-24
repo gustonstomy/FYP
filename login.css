@@ -1,0 +1,117 @@
+ :root{
+    --body-color: rgb(215, 232, 234);
+    --main-color:#9747FF;
+    --text-color: #222;
+    --p-color: #465b52;
+    --bg-color: rgb(255, 255, 255);
+    --blacks: rgb(0, 0, 0);
+    --stars-color: rgb(243, 181, 25);
+    --red-color: rgb(246, 49, 46);
+}
+ 
+ 
+ /*============LOG IN=================================*/
+body.login-page{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+/*============main container====================*/
+.wrapper{
+    position: relative;
+    width: 382px;
+    height: 587px;
+    border-radius: 20px;
+    background-color: var(--body-color);
+    display: grid;
+    justify-content: center;
+}
+.wrapper .form-box{
+    width: 100%;
+    height: 40px;
+}
+
+/*=============Agric-home============*/
+.form-box h1{
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 1.5rem; 
+    padding-bottom: 2.5rem;
+}
+
+.form-box h2{
+     text-align: center;
+}
+
+/*============Email and password text===========*/
+.lables{
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: .3rem;
+}
+
+.lables label{
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*==========Input field=============*/
+.input-box input{
+    width: 18rem;
+    height: 2rem;
+    border: 2px solid var(--blacks);
+    border-radius: 10px;
+
+}
+
+
+/*============Remember me================*/
+.remember-me{
+    display: grid;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.remember-me input{
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"]{
+    margin-right: .5rem;
+}
+
+/*===============BUTTON================*/
+.btn{
+    display: grid;
+    font-size: 18px;
+    width: 6rem;
+    height: 2.3rem;
+    align-content: center;
+    margin: 2rem auto;
+    color: var(--bg-color);
+    font-weight: 600;
+    background-color: var(--blacks);
+    border-radius: 10px;
+}
+
+
+/*======Forgot password==================*/
+
+.forgot-passw{
+    display: grid;
+    text-align: center;
+}
+.forgot-passw a{
+    text-decoration: none;
+    color: rgb(255, 65, 65);
+}
+
+.forgot-passw a:hover{
+    text-decoration: underline;
+}
