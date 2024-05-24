@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Log.css">
 </head>
 <body>
+   
     <div class="firstCname">AGRIC-HOME</div>
     <section id="header">
         <div class="Cname">AGRIC-HOME</div>
 
         <form class="Search_form">
-            <input type="search" placeholder="Search products brands and categories">
+            <input type="search" class="Search-form-input" placeholder="Search products brands and categories">
             <button class="normal">Search</button>
         </form>
         <div class="menu">
             <ul id="navbar">
-                <li><a href="account.html"><i class="fa-solid fa-user"></i>Account</a></li>
+                <li><a href="account.html" class=""><i class="fa-solid fa-user"></i>Account</a></li>
                 <li><a href="help"><i class="fa-regular fa-circle-question"></i>Help</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                <li><a href="#" id="cart-btn"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
                 
-            </ul>
-
-            <!-- -----Cart------- -->
+            </ul>    
             
-        </div>
     </section>
-
+    
     <div class="items_section">
         <section class="container1">
             <ul id="menu_items_list1">
@@ -43,16 +43,16 @@
             </ul>
         </section>
     
-    <div class="slider-container">
-        <div class="slider">
-            <img src="imgs/img-slide-1.jpg" alt="Slide 1" class="slide">
-            <img src="imgs/img-slide-2.jpg" alt="Slide 2" class="slide">
-            <img src="imgs/img-slide-3.jpg" alt="Slide 3" class="slide">
-            <img src="imgs/img-slide-4.png" alt="Slide 4" class="slide">
-            <img src="imgs/img-slide-5.jpg" alt="Slide 5" class="slide">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="imgs/img-slide-1.jpg" alt="Slide 1" class="slide">
+                <img src="imgs/img-slide-2.jpg" alt="Slide 2" class="slide">
+                <img src="imgs/img-slide-3.jpg" alt="Slide 3" class="slide">
+                <img src="imgs/img-slide-4.png" alt="Slide 4" class="slide">
+                <img src="imgs/img-slide-5.jpg" alt="Slide 5" class="slide">
+            </div>
         </div>
-    </div>
-        <div>
+        <div class="image-con">
             <div class="container3">
                <div class="img-fr1"></div>
             </div>
@@ -69,12 +69,44 @@
 
     <section id="product1" class="section-p1">
         <div class="pro-container">
+        <div class="pro">
+            <div class="img-1"><img src="imgs/mm.jpg" alt="" class="img-2"></div>
+            <div class="des">
+                <span class="main-title">Tomatoes</span>
+                <h4 class="product-price">₵50</h4>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <h5 class="loc">location</h5>
+            </div>
+            <i class="fa-solid fa-cart-shopping cart2"></i>
+        </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/mm.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/img-slide-1.jpg" alt="" class="img-2"></div>
+                <div class="des">
+                    <span class="main-title">Pepper</span>
+                    <h4 class="product-price">₵60</h4>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h5 class="loc">location</h5>
+                </div>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
+            </div>
+            <div class="pro">
+                <div class="img-1"><img src="imgs/ho.webp" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Tomatoes</span>
-                    <h4>₵50</h4>
+                    <span class="main-title">Onion</span>
+                    <h4 class="product-price">₵40</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -82,32 +114,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-1.jpg" alt=""></div>
-                <div class="des">
-                    <span>Pepper</span>
-                    <h4>₵60</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5>location</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/ho.webp" alt=""></div>
+                <div class="img-1"><img src="imgs/images (1).jfif" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Onion</span>
-                    <h4>₵40</h4>
+                    <span class="main-title">Pepper1</span>
+                    <h4 class="product-price">₵20</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -115,16 +131,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/images (1).jfif" alt=""></div>
+                <div class="img-1"><img src="imgs/images.jfif" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Pepper</span>
-                    <h4>₵50</h4>
+                    <span class="main-title">Tomatoes2</span>
+                    <h4 class="product-price">₵80</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -132,16 +148,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/images.jfif" alt=""></div>
+                <div class="img-1"><img src="imgs/img-slide-4.png" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Tomatoes</span>
-                    <h4>₵50</h4>
+                    <span class="main-title">Ball Pepper</span>
+                    <h4 class="product-price">₵75</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -149,33 +165,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-4.png" alt=""></div>
-               
-                <div class="des">
-                    <span>Bell Pepper</span>
-                    <h4>₵50</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5>location</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-3.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/img-slide-3.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Red Pepper</span>
-                    <h4>₵30</h4>
+                    <span class="main-title">Red Pepper</span>
+                    <h4 class="product-price">₵35</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -183,16 +182,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/on.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/on.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Onion</span>
-                    <h4>₵60</h4>
+                    <span class="main-title">Onion</span>
+                    <h4 class="product-price">₵46</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -200,16 +199,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/La-harvest.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/La-harvest.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Maize</span>
-                    <h4>₵30</h4>
+                    <span class="main-title">Maize</span>
+                    <h4 class="product-price">₵320</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -217,16 +216,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/harvesttomato.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/harvesttomato.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Tomatoes</span>
-                    <h4>₵80</h4>
+                    <span class="main-title">Tomatoes3</span>
+                    <h4 class="product-price">₵85</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -234,16 +233,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/k.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/k.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Spring Onion</span>
-                    <h4>₵20</h4>
+                    <span class="main-title">Spring Onion</span>
+                    <h4 class="product-price">₵25</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -251,16 +250,16 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+                <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
             <div class="pro">
-                <div class="img-1"><img src="imgs/har.jpg" alt=""></div>
+                <div class="img-1"><img src="imgs/har.jpg" alt="" class="img-2"></div>
                 
                 <div class="des">
-                    <span>Tomatoes</span>
-                    <h4>₵50</h4>
+                    <span class="main-title">Tomatoes5</span>
+                    <h4 class="product-price">₵56</h4>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -268,12 +267,29 @@
                         <i class="fas fa-star"></i>
                         
                     </div>
-                    <h5>location</h5>
+                    <h5 class="loc">location</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart2"></i></a>
+               <i class="fa-solid fa-cart-shopping cart2"></i>
             </div>
         </div>
     </section>
+     <!-- -----CART------- -->
+     <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- CONTENT -->
+        <div class="cart-content">
+        </div>
+        <!-- TOTAL -->
+    <div class="total">
+        <div class="total-title">Total: </div>
+        <div class="total-price">₵0</div>
+    </div>
+    <!-- BUY BUTTON -->
+    <button type="button" class="btn-buy"> Buy Now</button>
+    <!-- CART CLOSE -->
+    <i class="fa-solid fa-x" id="cart-close"></i>
+    </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
