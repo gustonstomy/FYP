@@ -2,295 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Log.css">
+
+    <link rel="stylesheet" href="lading-page.css">
 </head>
-<body class="landing-page">
-   
-    <div class="firstCname">AGRIC-HOME</div>
-    <section id="header">
-        <div class="Cname">AGRIC-HOME</div>
+<body>
+    <header>
+        <h2 class="Agric">AGRIC-HOME</h2>
+        <nav class="navigation1">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <button type="button" id="btnlogin1">Log in</button>
+            <button type="button" id="btnlogin2">Register</button>
+        </nav>
+    </header>
 
-        <form class="Search_form">
-            <input type="search" class="Search-form-input" placeholder="Search products brands and categories">
-            <button class="normal">Search</button>
-        </form>
-        <div class="menu">
-            <ul id="navbar">
-                <li><a href="account.html" class=""><i class="fa-solid fa-user"></i>Account</a></li>
-                <li><a href="help"><i class="fa-regular fa-circle-question"></i>Help</a></li>
-                <li><a href="#" id="cart-btn"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
-                
-            </ul>    
-            
-    </section>
-    
-    <div class="items_section">
-        <section class="container1">
-            <ul id="menu_items_list1">
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-                <li><a href="#" class="category">Fertilizers & Insecticides</a></li>
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-                <li><a href="#" class="category">Laborer & Machinery</a></li>
-               
-            </ul>
-        </section>
-    
-        <div class="slider-container">
-            <div class="slider">
+    <div class="slider-and-img">
+    <div class="img01">
+        <p>At AGRIC-HOME, we envision a thriving agricultural community empowered by innovative solutions and sustainable practices. Our mission is to serve as a premier platform for agricultural trade and empowerment, connecting farmers, buyers, and enthusiasts across the country.
+         Driven by our commitment to excellence, we continuously refine our platform to address the evolving needs and challenges of the agricultural sector. We strive to offer unparalleled access to high-quality produce, essential tools, and specialized expertise, fostering growth and prosperity for all stakeholders.
+         By embracing innovation, fostering collaboration, and championing sustainability AGRIC-HOME aims to fulfill both the collective and individual aspirations of our diverse community, locally and nationally.
+         Join us in cultivating a brighter future for agriculture, one transaction, one connection, at a time.
+        </p>
+    </div>
+     <div class="img-slider">
+            <div class="slider active">
                 <img src="imgs/img-slide-1.jpg" alt="Slide 1" class="slide">
+                <div class="info">
+                    <h2>Slide 1</h2>
+                    <p>WELCOME TO AGRIC-HOME</p>
+                </div>
+            </div>
+            <div class="slider">
                 <img src="imgs/img-slide-2.jpg" alt="Slide 2" class="slide">
-                <img src="imgs/img-slide-3.jpg" alt="Slide 3" class="slide">
+                <div class="info">
+                    <h2>Slide 2</h2>
+                    <p>EXPLORE THE WORLD OF FARMING</p>
+                </div>
+            </div>
+            <div class="slider">
+                 <img src="imgs/img-slide-3.jpg" alt="Slide 3" class="slide">
+                <div class="info">
+                    <h2>Slide 3</h2>
+                    <p>GET ALL YOUR FARM PRODUCE</p>
+                </div>
+            </div>
+            <div class="slider">
                 <img src="imgs/img-slide-4.png" alt="Slide 4" class="slide">
+                <div class="info">
+                    <h2>Slide 4</h2>
+                    <p>GET ALL YOUR FARM PRODUCE</p>
+                </div>
+            </div>
+            <div class="slider">
                 <img src="imgs/img-slide-5.jpg" alt="Slide 5" class="slide">
+                <div class="info">
+                    <h2>Slide 5</h2>
+                    <p>Log IN TO GET THE MOST OUT OF US</p>
+                </div>
             </div>
-        </div>
-        <div class="image-con">
-            <div class="container3">
-               <div class="img-fr1"></div>
-            </div>
-            <div class="container4">
-                <div class="img-fr2"></div>
-            </div>
-        </div>
-    </div>
-    <div class="horizontal-bar">
-        <a href="#" class="left-link">Available Products</a>
-        <a href="#" class="right-link">Browse to select</a>
-        
-    </div>
+            <div class="navigation">
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
 
-    <section id="product1" class="section-p1">
-        <div class="pro-container">
-        <div class="pro">
-            <div class="img-1"><img src="imgs/mm.jpg" alt="" class="img-2"></div>
-            <div class="des">
-                <span class="main-title">Tomatoes</span>
-                <h4 class="product-price">₵50</h4>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    
-                </div>
-                <h5 class="loc">location</h5>
             </div>
-            <i class="fa-solid fa-cart-shopping cart2"></i>
-        </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-1.jpg" alt="" class="img-2"></div>
-                <div class="des">
-                    <span class="main-title">Pepper</span>
-                    <h4 class="product-price">₵60</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/ho.webp" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Onion</span>
-                    <h4 class="product-price">₵40</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/images (1).jfif" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Pepper1</span>
-                    <h4 class="product-price">₵20</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/images.jfif" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Tomatoes2</span>
-                    <h4 class="product-price">₵80</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-4.png" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Ball Pepper</span>
-                    <h4 class="product-price">₵75</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/img-slide-3.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Red Pepper</span>
-                    <h4 class="product-price">₵35</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/on.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Onion</span>
-                    <h4 class="product-price">₵46</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/La-harvest.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Maize</span>
-                    <h4 class="product-price">₵320</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/harvesttomato.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Tomatoes3</span>
-                    <h4 class="product-price">₵85</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/k.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Spring Onion</span>
-                    <h4 class="product-price">₵25</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-                <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-            <div class="pro">
-                <div class="img-1"><img src="imgs/har.jpg" alt="" class="img-2"></div>
-                
-                <div class="des">
-                    <span class="main-title">Tomatoes5</span>
-                    <h4 class="product-price">₵56</h4>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h5 class="loc">location</h5>
-                </div>
-               <i class="fa-solid fa-cart-shopping cart2"></i>
-            </div>
-        </div>
-    </section>
-     <!-- -----CART------- -->
-     <div class="cart">
-        <h2 class="cart-title">Your Cart</h2>
-        <!-- CONTENT -->
-        <div class="cart-content">
-        </div>
-        <!-- TOTAL -->
-    <div class="total">
-        <div class="total-title">Total: </div>
-        <div class="total-price">₵0</div>
-    </div>
-    <!-- BUY BUTTON -->
-    <button type="button" class="btn-buy"> Buy Now</button>
-    <!-- CART CLOSE -->
-    <i class="fa-solid fa-x" id="cart-close"></i>
-    </div>
+        </div> 
     </div>
     
-    <script src="script.js"></script>
+        <div class="text-img-container">
+            <div class="text">
+                <p>At AGRIC-HOME, we envision a thriving agricultural community empowered by innovative solutions and sustainable practices. Our mission is to serve as a premier platform for agricultural trade and empowerment, connecting farmers, buyers, and enthusiasts across the country.
+                Driven by our commitment to excellence, we continuously refine our platform to address the evolving needs and challenges of the agricultural sector. We strive to offer unparalleled access to high-quality produce, essential tools, and specialized expertise, fostering growth and prosperity for all stakeholders.
+                By embracing innovation, fostering collaboration, and championing sustainability AGRIC-HOME aims to fulfill both the collective and individual aspirations of our diverse community, locally and nationally.
+                Join us in cultivating a brighter future for agriculture, one transaction, one connection, at a time.
+                </p>
+            </div>
+
+            <div class="img-by">
+                
+            </div>
+        </div>
+        <div class="above-footer">
+            <h1>AGRIC-HOME</h1>
+            <div class="agri-links">
+                <p>AGRIC-HOME LINKS</p>
+                <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Support</a></li>
+                <li> <a href="">Contact</a></li>              
+                </ul>
+            </div>
+            <div class="agri-links2">
+                <p>AGRIC-HOME OFFICE HOURS</p>
+                <p>Monday-Friday: 7:30am - 4:30pm</p>
+            </div>
+        </div>
+        <footer>© Copyright  AGRIC-HOME . All Rights Reserved.</footer>
+     <script src="landing.js"></script>
 </body>
-</html>

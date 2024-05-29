@@ -1,39 +1,61 @@
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
-const totalSlides = slides.length;
+ /*==================Slider Selector=================*/
+    const slider = document.querySelectorAll('.slider');
+    const sliderBtn = document.querySelectorAll('.slider-btn');
+    let currentSlide = 1;
+/*====================Slider function===============================*/
+    var manualNav = function(manual){
+        slider.forEach((slide)=> {
+            slide.classList.remove('active');
 
-function updateSlideWidth() {
-    return slider.clientWidth;
-}
-
-function nextSlide() {
-    const slideWidth = updateSlideWidth();
-    currentIndex = (currentIndex + 1) % totalSlides;
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-
-    if (currentIndex === totalSlides - 1) {
-        setTimeout(() => {
-            currentIndex = 0;
-            slider.style.transition = 'none';
-            slider.style.transform = `translateX(0)`;
-            setTimeout(() => {
-                slider.style.transition = '';
+            sliderBtn.forEach((btn)=> {
+            btn.classList.remove('active');
             });
-        }, 500);
+        });
+        
+
+        slider[manual].classList.add('active');
+        sliderBtn[manual].classList.add('active');
     }
-}
 
-const interval = setInterval(nextSlide, 3000);
-
-window.addEventListener('resize', () => {
-    slider.style.transition = 'none';
-    const slideWidth = updateSlideWidth();
-    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    setTimeout(() => {
-        slider.style.transition = '';
+    sliderBtn.forEach((btn, i) => {
+        btn.addEventListener("click", ()=>{
+            manualNav(i);
+            currentSlide = 1;
+        });
     });
-});
+
+    var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+
+        var repeater = ()=>{
+            
+            setTimeout(function(){
+                slider.forEach((slide)=> {
+            slide.classList.remove('active');
+
+            sliderBtn.forEach((btn)=> {
+            btn.classList.remove('active');
+            });
+        });
+                slider[i].classList.add('active');
+                sliderBtn[i].classList.add('active');
+                i++;
+
+                if(slider.length == i){
+                    i = 0;
+                }
+                if(i >= slider.length){
+                    return;
+                }
+                repeater();
+            }, 3000);
+             
+        }
+        repeater();
+    }
+    repeat();
+
 
 
 // OPEN AND CLOSS CART
