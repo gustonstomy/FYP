@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' sans-serif;   
+}
+:root{
+    --body-color: #E3E6F3;
+    --main-color:#9747FF;
+    --text-color: #222;
+    --p-color: #465b52;
+    --bg-color: rgb(255, 255, 255);
+    --blacks: rgb(0, 0, 0);
+    --stars-color: rgb(243, 181, 25);
+    --red-color: rgb(246, 49, 46);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' sans-serif;
+    background-color: rgb(157, 155, 155);;
+}
+.firstCname{
+    height: 3rem;
+  text-align: center;
+  align-content: center;
+  font-size: 30;
+  padding: 0.3rem 0.3rem;
+  font-weight: bold;
+  background: var(--body-color);
+  
+}
+
+/* .profilesection{
+    width: 60%;
+    height: 60vh;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 19rem;
+    margin-top: 2rem;
+} */
+.profilesection {
+  width: 60%;
+  height: 60vh;
+  background-color: white;
+  border-radius: 20px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-details h2, .profile-details p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.profile-buttons {
+  margin-top: 1rem;
+}
+
+.profile-buttons button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-profile {
+  background-color: #ccc;
+  color: black;
+}
+
+.delete-account {
+  background-color: #f8d7da;
+  color: red;
+}
+
+.profile-actions {
+    padding-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+/* ===================================================================================== */
+#product1{
+    text-align: center;
+    
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1.25rem;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 15.625rem;
+    padding: 1.563rem 1.25rem;
+    border:  0.063rem solid var(--main-color);
+    border-radius: 1.563rem;
+    cursor: pointer;
+    margin: 0.938rem 0;
+    transition: 0.2s ease;
+    box-shadow: 1.25rem 1.25rem 1.875rem rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 1.25rem 1.25rem 1.25rem rgba(97, 47, 255, 0.3);
+    padding: 0.625rem
+    ;
+    border: 0.063rem solid var(--main-color);
+    transition: .4s;
+}
+#product1 .pro .img-1{
+    width: 100%;
+    height: 70%;
+}
+
+#product1 .pro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem;
+    object-fit: cover;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 0.625rem 0;
+}
+
+
+#product1 .pro .des span{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+
+#product1 .pro .des h5{
+    padding-top: 0.4375rem;
+    font-size: 1.125rem;
+    color: #1a1a1a;
+}
+
+#product1 .pro .des h4{
+    padding-top: 0.4375rem;
+    font-size: 1.125rem;
+    color: #088178;
+}
+
+#product1 .pro .des i{
+    padding-top: 0.4375rem;
+    font-size: 0.75rem;
+    color: var(--stars-color);
+}
+
+#product1 .pro .cart3{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 3.125rem;
+    background-color: #e8f6ea;
+    border:  0.063rem solid #cce7d0;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 0.625rem;
+    font-style: 24px;
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+#product1 .pro .cart3:hover{
+    background-color: var(--stars-color);
+}
+
+ footer{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    align-content: center;
+    color: var(--bg-color);
+    background-color: var(--blacks);
+    margin-top: 2rem;
+}
