@@ -1,77 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    /*==================Login and Register Selector=================*/
-    const btnlogin1 = document.querySelector("#btnlogin1");
-    const btnlogin2 = document.querySelector("#btnlogin2");
 
-    /*==================Slider Selector=================*/
-    const slider = document.querySelectorAll('.slider');
-    const sliderBtn = document.querySelectorAll('.slider-btn');
-    let currentSlide = 1;
+// <!-- ============================Image Slider Section================================== -->
+document.addEventListener('DOMContentLoaded', function () {
+    
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.img-slider .slider');
+  const totalSlides = slides.length;
+  let transitioning = false;
 
+  function nextSlide() {
+    if (transitioning) return;
+    transitioning = true;
 
-     /*=============Login and Register function=====================*/
-    btnlogin1.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.location.href = "login.html";
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides[currentSlide].classList.add('active');
+
+    setTimeout(() => {
+      transitioning = false;
+    }, 500); // Match this to the CSS transition duration
+  }
+
+  setInterval(nextSlide, 3000);
 });
-
-
-    btnlogin2.addEventListener("click", (event) => {
-        event.preventDefault();
-        window.location.href = "register-as.html";
-    });
- /*====================Slider function===============================*/
-    var manualNav = function(manual){
-        slider.forEach((slide)=> {
-            slide.classList.remove('active');
-
-            sliderBtn.forEach((btn)=> {
-            btn.classList.remove('active');
-            });
-        });
-        
-
-        slider[manual].classList.add('active');
-        sliderBtn[manual].classList.add('active');
-    }
-
-    sliderBtn.forEach((btn, i) => {
-        btn.addEventListener("click", ()=>{
-            manualNav(i);
-            currentSlide = 1;
-        });
-    });
-
-    var repeat = function(activeClass){
-        let active = document.getElementsByClassName('active');
-        let i = 1;
-
-        var repeater = ()=>{
-            
-            setTimeout(function(){
-                slider.forEach((slide)=> {
-            slide.classList.remove('active');
-
-            sliderBtn.forEach((btn)=> {
-            btn.classList.remove('active');
-            });
-        });
-                slider[i].classList.add('active');
-                sliderBtn[i].classList.add('active');
-                i++;
-
-                if(slider.length == i){
-                    i = 0;
-                }
-                if(i >= slider.length){
-                    return;
-                }
-                repeater();
-            }, 3000);
-             
-        }
-        repeater();
-    }
-    repeat();
-});
-
